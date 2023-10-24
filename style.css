@@ -2,9 +2,27 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    border: 1px solid tomato;
+}
+
+body {
+    display: grid;
+    grid-template: 1fr 5fr / 1fr 3fr;
+}
+
+nav {
+    grid-row: 1 / -1;
+}
+
+main {
+    grid-row: 2 / -1;
 }
 
 img {
     width: 1.5rem;
     height: auto;
+}
+
+nav section > img:first-child {
+    width: 3rem;
 }
