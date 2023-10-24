@@ -35,11 +35,92 @@ nav section > img:first-child {
     width: 2.5rem;
 }
 
+header > section:first-child {
+    display: grid;
+    grid-template: 1fr / 2fr 1fr;
+}
+
+header > section:first-child div {
+    display: flex;
+    padding-left: 2rem;
+    justify-content: flex-end;
+    gap: 1rem;
+    align-items: center;
+}
+
+header > section:first-child div:last-child {
+    margin-right: 3rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+label, input {
+    margin: 1rem 0;
+    height: 30px;
+}
+
+input {
+    margin-right: 5rem;
+}
+
+header > section:first-child input {
+    flex: 1 1 auto;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(219, 218, 218);
+}
+
+.profile {
+    width: 3rem;
+    border-radius: 50%;
+}
+
+header > section:last-child {
+    display: grid;
+    grid-template: 1fr / 2fr 1fr;
+}
+
+header > section:last-child div {
+    display: flex;
+    align-items: center;
+    padding-left: 2rem;
+    gap: 20px;
+}
+
+header > section:last-child div:last-child {
+    justify-content: flex-end;
+    margin-right: 3rem;
+}
+
+.main-profile, .main-profile + p, button {
+    margin: 1rem 0;
+}
+
+header > section:last-child span {
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.main-profile {
+    width: 5rem;
+    border-radius: 50%;
+}
+
+button {
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgb(106, 141, 236);
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
 main {
     grid-row: 2 / -1;
 }
 
 img {
-    width: 1.5rem;
+    width: 1.6rem;
     height: auto;
 }
