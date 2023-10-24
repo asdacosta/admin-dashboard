@@ -8,10 +8,31 @@
 body {
     display: grid;
     grid-template: 1fr 5fr / 1fr 3fr;
+    font-size: 1.2rem;
 }
 
 nav {
     grid-row: 1 / -1;
+    display: grid;
+    align-content: flex-start;
+    gap: 50px;
+}
+
+nav > section:first-child > span {
+    font-size: 2rem;
+}
+
+nav img {
+    margin: 10px;
+}
+
+nav > section:first-child, nav div {
+    display: flex;
+    align-items: center;
+}
+
+nav section > img:first-child {
+    width: 2.5rem;
 }
 
 main {
@@ -21,8 +42,4 @@ main {
 img {
     width: 1.5rem;
     height: auto;
-}
-
-nav section > img:first-child {
-    width: 3rem;
 }
