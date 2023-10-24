@@ -17,5 +17,7 @@ Developers, users, and recruiters.
 * `VS Code`
 
 ## Files
-
-
+| File | Description |
+| - | - |
+|`index.html`| Sets structure of website.|
+|`style.css`| Makes website look presentable.|
