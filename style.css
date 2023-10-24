@@ -4,3 +4,7 @@
     box-sizing: border-box;
 }
 
+img {
+    width: 1.5rem;
+    height: auto;
+}
