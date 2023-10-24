@@ -2,13 +2,15 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    border: 1px solid tomato;
+    /* border: 1px solid tomato; */
 }
 
 body {
     display: grid;
-    grid-template: 1fr 5fr / 1fr 3fr;
-    font-size: 1.2rem;
+    grid-template: 1fr 5fr / 1fr 5fr;
+    font-size: 1.1rem;
+    background-color: rgb(215, 224, 228);
+    height: 100vh;
 }
 
 nav {
@@ -16,6 +18,11 @@ nav {
     display: grid;
     align-content: flex-start;
     gap: 50px;
+    background-color: rgb(73, 164, 238);
+    color: white;
+    font-weight: 600;
+    font-size: 1.5rem;
+    box-shadow: 4px 0 6px rgba(0, 0, 0, 0.3);
 }
 
 nav > section:first-child > span {
@@ -26,6 +33,10 @@ nav img {
     margin: 10px;
 }
 
+nav span {
+    cursor: pointer;
+}
+
 nav > section:first-child, nav div {
     display: flex;
     align-items: center;
@@ -33,6 +44,12 @@ nav > section:first-child, nav div {
 
 nav section > img:first-child {
     width: 2.5rem;
+}
+
+header {
+    height: fit-content;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 header > section:first-child {
@@ -49,7 +66,7 @@ header > section:first-child div {
 }
 
 header > section:first-child div:last-child {
-    margin-right: 3rem;
+    padding-right: 3rem;
     font-size: 1.5rem;
     font-weight: 600;
 }
@@ -59,19 +76,27 @@ label, input {
     height: 30px;
 }
 
-input {
-    margin-right: 5rem;
+label {
+    cursor: pointer;
 }
 
-header > section:first-child input {
+input {
+    margin-right: 5rem;
     flex: 1 1 auto;
     border-radius: 10px;
     border: none;
-    background-color: rgb(219, 218, 218);
+    background-color: rgb(215, 224, 228);
+    padding-left: 5px;
+}
+
+input:hover, input:focus {
+    border: 2px solid rgb(186, 217, 231);
+    background-color: rgb(209, 222, 228);
 }
 
 .profile {
     width: 3rem;
+    height: 3rem;
     border-radius: 50%;
 }
 
@@ -89,7 +114,7 @@ header > section:last-child div {
 
 header > section:last-child div:last-child {
     justify-content: flex-end;
-    margin-right: 3rem;
+    padding-right: 3rem;
 }
 
 .main-profile, .main-profile + p, button {
@@ -103,6 +128,7 @@ header > section:last-child span {
 
 .main-profile {
     width: 5rem;
+    height: 5rem;
     border-radius: 50%;
 }
 
@@ -110,17 +136,96 @@ button {
     width: 100px;
     height: 40px;
     border-radius: 20px;
-    background-color: rgb(106, 141, 236);
+    background-color: rgb(73, 164, 238);
     color: white;
     font-size: 1rem;
     font-weight: 600;
+    border: none;
+}
+
+button:hover {
+    color: rgb(209, 222, 228);
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
 }
 
 main {
     grid-row: 2 / -1;
+    display: grid;
+    padding-top: 20px;
+    grid-template: repeat(2, 1fr) / 3fr 1fr;
+}
+
+main > section:first-child {
+    grid-row: 1 / -1;
+    display: grid;
+    align-content: flex-start;
+}
+
+main > section:first-child h2 {
+    padding-left: 40px;
+}
+
+h2 {
+    margin: 20px 20px 5px 0;
+}
+
+main > section:last-child {
+   grid-column: 2 / -1; 
+}
+
+.main-big {
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(auto-fit, minmax(400px, 1fr));
+    gap: 45px;
+    padding: 0 40px 105px 40px;
+    height: 100vh;
+}
+
+.main-mid, .main-last {
+    margin-right: 40px;
+    /* border: 2px solid teal; */
+}
+
+.main-mid div:first-child, .main-last div:first-child {
+    border-start-start-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.main-mid div:last-child, .main-last div:last-child {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.main-big div, .main-mid div, .main-last div {
+    padding: 20px;
+    background-color: white;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2); 
+}
+
+.main-last div {
+    display: flex;
+    gap: 20px;
+}
+
+.main-big > div {
+    display: flex;
+    flex-direction: column;
+    border-left: 10px solid rgb(94, 177, 245);
+    border-radius: 10px;
+}
+
+.main-big div div {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-top: auto;
+    gap: 20px;
+    padding: 4.2rem 2.5rem 0 0;
 }
 
 img {
     width: 1.6rem;
     height: auto;
+    cursor: pointer;
 }
