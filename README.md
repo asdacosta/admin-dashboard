@@ -16,7 +16,7 @@
 
 **Demo:**
 
-![Live Demo](./view-imgs/)
+![Live Demo](./view-imgs/dashboard-demo.gif)
 
 <details>
 
@@ -24,7 +24,7 @@
 
 **Desktop View:**
 
-<img src="./view-imgs/" alt="desktop view">
+<img src="./view-imgs/desktop.png" alt="desktop view">
 <br>
 
 **Mobile View:**
@@ -54,6 +54,7 @@ Developers, users, recruiters.
 | - | - |
 |`index.html`| Sets structure of website.|
 |`style.css`| Makes website look presentable.|
+|`view-imgs`| Contains the live demo and different screen views used in `README.md`.|
 
 </details>
 
@@ -74,7 +75,7 @@ Developers, users, recruiters.
 ## 🔄 Improvements
 <details>
 <summary>Invert</summary>
-No Improvements
+- [ ] Add hovering effect to dashboard options.
 
 </details>
 
