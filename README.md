@@ -74,6 +74,7 @@ Developers, users, recruiters.
 ## 🔄 Improvements
 <details>
 <summary>Invert</summary>
+
 - [ ] Add hovering effect to dashboard options.
 
 </details>
