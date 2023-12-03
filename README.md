@@ -53,7 +53,7 @@ Developers, users, recruiters.
 | - | - |
 |`index.html`| Sets structure of website.|
 |`style.css`| Makes website look presentable.|
-|`view-imgs`| Contains the live demo and different screen views used in `README.md`.|
+|`view-imgs/*`| Live demo and different screen views used in `README.md`.|
 
 </details>
 
