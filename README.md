@@ -15,7 +15,7 @@
 
 **Demo:**
 
-![Live Demo](./view-imgs/dashboard-demo.gif)
+![Live Demo](./readme-assets/dashboard-demo.gif)
 
 <details>
 
@@ -23,7 +23,7 @@
 
 **Desktop View:**
 
-<img src="./view-imgs/desktop.png" alt="desktop view">
+<img src="./readme-assets/desktop.png" alt="desktop view">
 <br>
 
 **Mobile View:**
@@ -53,7 +53,7 @@ Developers, users, recruiters.
 | - | - |
 |`index.html`| Sets structure of website.|
 |`style.css`| Makes website look presentable.|
-|`view-imgs/*`| Live demo and different screen views used in `README.md`.|
+|`readme-assets/*`| Live demo and different screen views used in `README.md`.|
 
 </details>
 
